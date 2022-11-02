@@ -70,7 +70,6 @@ $questions = Showquestions();
                     <tr>
                         <th>السؤال</th>
                         <th>الاجابة</th>
-                        <th>تعديل </th>
                         <th>حذف </th>
                     </tr>
                 </thead>
@@ -80,9 +79,6 @@ $questions = Showquestions();
                     <tr>
                       <td><?= $question["answer"] ?></td>
                       <td><?= $question["question"] ?></td>
-                      <td>
-                        <a href="updateqestion.php" class="btn btn-success">تعديل</a>
-                      </td>
                       <td>
                         <a href="deletequestion.php?id=<?= $question["id"] ?>" class="btn btn-danger">حذف</a>
                       </td>
